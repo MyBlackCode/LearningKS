@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Zgadnij liczbę</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Zgadnij liczbę</h1>
+    <p>Program wybrał liczbę od 1 do 100. Sprawdź, czy uda Ci się ją odgadnąć w
+       mniej niż 10 prób. Otrzymasz podpowiedzi o tym, czy zgdywana przez Ciebie
+        wartość jest zbyt duża lub zbyt mała</p>
+    <div class="form">
+      <label for="guessField">Wprowadź liczbę: </label>
+      <input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Wyślij odpowiedź" class="guessSubmit">
+    </div>
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+    <script type="text/javascript" src="game.js"></script>
+  </body>
+</html>
